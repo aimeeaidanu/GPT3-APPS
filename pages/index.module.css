@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "ColfaxAI";
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2)
+      format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ColfaxAI";
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.main,
+.main input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #353740;
+  font-family: "ColfaxAI", Helvetica, sans-serif;
+}
+.main {
+  overflow:hidden;
+  overflow-x:hidden;
+  text-align: center;
+  align-items: center;
+  padding-top: 60px;
+  overflow-y: auto;
+  
+  /* hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.main ::-webkit-scrollbar {
+  display: none;
+}
+.main .icon {
+  width: 64px;
+}
+.main h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #202123;
+  margin: 16px 0 40px;
+}
+.main form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+.main input[type="text"] {
+  padding: 12px 16px;
+  border: 1px solid #10a37f;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+.main ::placeholder {
+  color: #8e8ea0;
+  opacity: 1;
+}
+.main input[type="submit"] {
+  padding: 12px 0;
+  color: #fff;
+  background-color: #10a37f;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.main .result {
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.main .column {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: black;
+  
+}
+
+.main .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main .button{
+  left: 50%;
+  width: 99%;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+}
+.main .button2{
+  left: 50%;
+  width: 99%;
+  height: 50px;
+  font-size: 25px;
+  color: white;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: black;
+  background-color: black;
+}
+
+.main .applabel {
+  position: relative;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  line-height: 50px;
+  background:#ca2c2c;
+  border-radius:5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Just for demo of responsive nature */
+
+.main .applabel{
+  transition: all 0.5s;
+}
+.main .applabel:hover{
+  font-size: 25px;
+}
